@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#F4976C;
+    height: 65px;
+    z-index: 500;
+}
+.toolbar-navigation{
+    display:flex;
+    height: 100%;
+    align-items: center;
+    padding:0 1rem;
+}
+
+.toolbar-nav-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar-nav-items li {
+    padding: 0 0.5rem;
+}
+
+.toolbar-nav-items a {
+    color: #FBE8A6;
+    font-family: 'Nunito', sans-serif;
+}
+
+ .toolbar-logo a {
+     color: #FBE8A6;
+     text-decoration: none;
+     font-size:1.5rem;
+     font-family: 'Nunito', sans-serif;
+ }
+
+ .toolbar-logo {
+     margin-left: 1rem;
+ }
+
+ .nav-spacer{
+     flex: 1;
+ }
+
+.toolbar-nav-items a:hover,
+.toolbar-nav-items a:active {
+    /* color: #FBE8A6; */
+    color:#303c6c;
+}
+
+
+
+/* media queries  */
+/* @media (min-width:768px) { */
+@media (max-width: 799px) {
+    .toolbar-nav-items {
+        display: none;
+    }
+}
+
+/* this media query will hide the button on big screens and remove some margin for the logo */
+/* @media (min-width:769px) { */
+@media (min-width:800px) {
+
+    .toolbar-toggle-button {
+        display: none;
+    }
+
+    .toolbar-logo {
+        margin-left:0;
+    }
+}
+
+/* colors to use */
+/* .toolbar{
+    navbar-color:#F9B76D ;
+    fonts: #F4976C;
+    content-background:#303C6C;
+    main-page-background:#FBE8A6;
+    footer-color:#F9B76D ;
+    active-color: #303c6c;
+} */
